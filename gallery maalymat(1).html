@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музей Лувр</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Музей Лувр</h1>
+        <p>🏛 Один из крупнейших и старейших художественных музеев мира</p>
+    </header>
+
+    <section class="info">
+        <h2>Общая информация</h2>
+        <p>Лувр — это один из крупнейших и старейших художественных музеев мира, расположенный в центре Парижа.</p>
+        <p>Музей занимает здание бывшего Луврского дворца, история которого уходит в XII век.</p>
+    </section>
+
+    <section class="history">
+        <h2>История музея</h2>
+        <ul>
+            <li>1190 год — построен как крепость при короле Филиппе II Августе.</li>
+            <li>XVI век — превращён в королевскую резиденцию.</li>
+            <li>1793 год — официальное открытие музея после Французской революции.</li>
+        </ul>
+    </section>
+
+    <section class="collections">
+        <h2>Коллекции и экспонаты</h2>
+        <ul>
+            <li>Древний Египет: саркофаги, мумии, скульптуры.</li>
+            <li>Античность: греческое, римское и этрусское искусство.</li>
+            <li>Западноевропейская живопись: от Средневековья до XIX века.</li>
+            <img src="/Венера милоссккая.jpg" alt="Венера Милосская — античная скульптура, являющаяся одним из символов Лувра.">
+            <img src="/Дизайн без названия.jpg" alt="">
+            <img src="/Дизайн без названия33.jpg" alt="">
+        </ul>
+    </section>
+
+    <section class="famous-works">
+        <h2>Знаменитые произведения</h2>
+        <ul>
+            <li>Мона Лиза (Леонардо да Винчи)</li>
+            <li>Венера Милосская</li>
+            <li>Ника Самофракийская</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>📍 Адрес: Rue de Rivoli, 75001 Paris, France</p>
+        <p>🎟 Стандартный билет: около 17 €</p>
+    </footer>
+
+
+</body>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #f88d00, #f88d00);
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #943701;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    transform: scale(1);
+    animation: headerAnim 2s ease-in-out infinite;
+}
+
+header h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-10px);
+}
+
+section h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #bbdefb;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #444;
+}
+
+footer {
+    background-color: #943701;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+}
+.popular-gallery {
+    display: flex;
+    justify-content: space-between; /* Аралыкты бөлүштүрөт */
+    flex-wrap: wrap; /* Эгер экран кичине болсо, төмөн түшөт */
+    gap: 50px; /* Сүрөттөр ортосунда чоң аралык */
+    margin-top: 100px;
+    padding: 100px;
+}
+
+
+.item {
+    flex: 0 0 300px; /* Ар бир элементтин туурасы 300px */
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+@keyframes headerAnim {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+    
+}
+
+</style>
+</html>

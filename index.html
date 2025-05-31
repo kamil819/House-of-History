@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерейный Музей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            
+            <h1>Галерейный Музей</h1>
+        </div>
+        <nav>
+            <a href="#about">О музее</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#contact">Контакты</a>
+        </nav>                 
+    </header>
+
+    <section id="about">
+        <h2>О музее</h2>
+        <h1>Этот галерейный музей — специально организованное выставочное пространство для любителей искусства. Здесь представлены уникальные работы различных художников.</h1>
+    </section>
+
+    <section id="gallery">
+        <h1></h1>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="/gallery maalymat(1).html">
+                    <img src="/unnamed(1).jpg" alt="музей Лувр">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="kamil.html">
+                    <img src="/50bae31b370027fe4798b664858fa80a-3586-10.avif" alt="Картина 2">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="vatikan.html">
+                    <img src="/Без названия(1).jpeg" alt="Картина 3">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <section id="popular">
+        <h2>Самые посещаемые</h2>
+        <div class="popular-gallery">
+            <div class="item">
+                <img src="/unnamed.jpg" alt="Выбранная 1">
+                <h3>Лувр</h3>
+                <p>Лувр (Louvre) — один из крупнейших и самых известных художественных музеев в мире. Он расположен в Париже, Франция, и является одним из самых посещаемых музеев на планете.</p>
+                <p class="price">Цена:180 USD</p>
+                <div class="stars">★★★★★</div>
+                <button class="buy-btn">Посещать</button>
+            </div>
+            <div class="item">
+                <img src="/50bae31b370027fe4798b664858fa80a-3586-10.avif" alt="Выбранная 2">
+                <h3> Прадо</h3>
+                <p>Испания (Мадрид) Веласкес, Гойя, крупнейшая коллекция испанского искусства</p>
+                <p class="price">Цена: 129 USD</p>
+                <div class="stars">★★★★☆</div>
+                <button class="buy-btn">Посещать</button>
+            </div>
+            <div class="item">
+                <img src="/Без названия.jpeg" alt="Выбранная 3">
+                <h3>Ватикана</h3>
+                <p>Сикстинская капелла, коллекции римского и этрусского искусства</p>
+                <p class="price">Цена:89 USD</p>
+                <div class="stars">★★★★★</div>
+                <button class="buy-btn">Посещать</button>
+            </div>
+            <div id="cart">
+                <h3> Корзина</h3>
+                <ul id="cart-items"></ul>
+                <p id="total">Итого: 0 USD</p>
+                <button id="clear-cart">Оформить</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Галерейный Музей. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
